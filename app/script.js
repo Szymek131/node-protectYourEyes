@@ -31,7 +31,7 @@ const App = () => {
   }
 
   const startTimer = () => {
-    setTime(10);
+    setTime(1200);
     setStatus('work');
     setTimer(setInterval(() => {
       setTime(time => time - 1);
