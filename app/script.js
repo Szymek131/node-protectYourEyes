@@ -46,14 +46,14 @@ const App = () => {
         setTime(workTime);
       }
     }
-  });
+  }, [time]);
 
   const startTimer = () => {
     setTime(workTime);
     setStatus(statuses.work);
     setTimer(setInterval(() => {
       setTime(time => time - 1);
-    }, 1));
+    }, 1000));
   }
 
   const stopTimer = () => {
